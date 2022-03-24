@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
 * {
-  
   box-sizing: border-box;
 }
 
@@ -13,10 +13,7 @@ body {
 body > h1{
   text-align: center;
 }
-
-/***************************************
-
-*****************************************/
+/*_________________________________*/
 .gameCon{
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -32,17 +29,14 @@ body > h1{
 #lost{
   color: red;
 }
-
-/***************************************
-
-*****************************************/
+/*_______________________________________*/
 .play{
   font-family: 'Montserrat', sans-serif;
   display:grid;
   text-align: center;
   font-size: 1.5em;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
     "zero three six nine twelve fifteen eighteen tone tfour tseven thirty ththree thsix fcol"
     "zero two five eight eleven fourteen seteen twenty twthree twsix twnine thtwo thfive scol"
@@ -53,43 +47,43 @@ body > h1{
 }
 
 .zero{
+  background: green;
   grid-area: zero;
-  background:linear-gradient(to bottom, #0e0e0e 5%, #1b1b1b 100%);
   font-family: 'Montserrat', sans-serif;
   color: white;
 }
 
 .ratio{
+  background: rgb(29, 29, 29);
   grid-area: f;
-  background:linear-gradient(to bottom, #0e0e0e 5%, #1b1b1b 100%);
   font-family: 'Montserrat', sans-serif;
   color: white;
 }
 
 .ratioTwo{
+  background: rgb(29, 29, 29);
   grid-area: s;
-  background:linear-gradient(to bottom, #0e0e0e 5%, #1b1b1b 100%);
   font-family: 'Montserrat', sans-serif;
   color: white;
 }
 
 .ratioThree{
   grid-area: t;
-  background:linear-gradient(to bottom, #0e0e0e 5%, #1b1b1b 100%);
+  background: rgb(29, 29, 29);
   font-family: 'Montserrat', sans-serif;
   color: white;
 }
 
 .first{
   grid-area: b;
-  background:linear-gradient(to bottom, #0e0e0e 5%, #1b1b1b 100%);
+  background: rgb(29, 29, 29);
   font-family: 'Montserrat', sans-serif;
   color: white;
 }
 
 .even{
   grid-area: e;
-  background:linear-gradient(to bottom, #0e0e0e 5%, #1b1b1b 100%);
+  background: rgb(29, 29, 29);
   font-family: 'Montserrat', sans-serif;
   color: white;
 }
@@ -109,17 +103,19 @@ body > h1{
 .col {
   font-family: 'Montserrat', sans-serif;
   color: white;
-  background:linear-gradient(to bottom, #0e0e0e 5%, #1b1b1b 100%);
+  background: rgb(29, 29, 29);
 }
 .odd{
   grid-area: o;
-  background:linear-gradient(to bottom, #0e0e0e 5%, #1b1b1b 100%);
+  background: rgb(29, 29, 29);
   font-family: 'Montserrat', sans-serif;
   color: white;
+}.odd:hover{
+  background-color: rgb(128, 128, 128);
 }
 .last{
   grid-area: l;
-  background:linear-gradient(to bottom, #0e0e0e 5%, #1b1b1b 100%);
+  background: rgb(29, 29, 29);
   font-family: 'Montserrat', sans-serif;
   color: white;
 }
@@ -127,11 +123,10 @@ body > h1{
 .play section:hover{
   background-color: rgb(128, 128, 128);
 }
-
-/***************************************
-
-*****************************************/
-
+.colOne section:hover {
+  background-color: rgb(128, 128, 128);
+}
+/*____________________________________________*/
 .num{
   background-color: black;
   color: white;
@@ -140,17 +135,6 @@ body > h1{
 .r{
   background-color: red;
 }
-
-/* .choiceChoice{
-  background: url("../images/coin.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height:100%;
-} */
-
-/***************************************
-MEDIA QUERIES
-*****************************************/
 
 /* tablet */
 @media (min-width: 768px) and (max-width: 1023px){
@@ -161,6 +145,10 @@ MEDIA QUERIES
 @media screen and (max-width: 767px){
 
 }
+
+/*______________________
+Beauty Styling
+_____________________*/
 
 .spinButton {
 	box-shadow:inset 0px 0px 0px 0px #ffffff;

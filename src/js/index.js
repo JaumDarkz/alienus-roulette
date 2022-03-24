@@ -95,7 +95,7 @@ function drawRouletteWheel() {
     }
 
     //Arrow
-    ctx.fillStyle = "black";
+    ctx.fillStyle = "white";
     ctx.beginPath();
     ctx.moveTo(250 - 4, 250 - (outsideRadius + 5));
     ctx.lineTo(250 + 4, 250 - (outsideRadius + 5));
@@ -275,7 +275,7 @@ function checkWin(num){
         }
       }else if(choiceCheck === "Black"){
         const black = [2, 4, 6, 8, 10, 11, 13, 15, 17, 20, 22, 24, 26, 28, 29, 31, 33, 35]
-        if(Number(choiceCheck) === 0){
+        if(Number(choiceCheck) === 0){   // aaaaaaaa não aguento mais
           losings = Number(bet.value) * 2
           lost.textContent = losings
         }else if (black.includes(num)) {
@@ -297,11 +297,8 @@ function checkWin(num){
         lost.textContent = losings
       }
     }
-
-
   console.log(num)
 }
-
 function easeOut(t, b, c, d) {
   var ts = (t/=d)*t;
   var tc = ts*t;
