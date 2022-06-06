@@ -1,3 +1,3 @@
 # Alienus Roulette
 
-A professional roulette developed to an NFT game.
+A professional roulette developed to a NFT game.
